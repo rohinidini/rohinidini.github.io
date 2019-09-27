@@ -6,7 +6,7 @@ input{
     padding:50px;
     background-color: transparent;
     position: absolute;
-	color: white;
+	color: #ffffff;
 	top:0;
 	bottom: 0px;
 	left: 0;
@@ -15,7 +15,7 @@ input{
 	margin: auto;
 }
 
-x{ color:white;
+x{ color:#ffffff;
     position: absolute;
 	top:250px;
 	bottom: 40px;
