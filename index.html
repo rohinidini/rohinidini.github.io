@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    
+  
+    
+</head>
+
+<body>
+    
+    <x>Sign up for our email list</x>
+        
+        <input id = "email1" type = "text" 
+            placeholder="enter your email" 
+            name = "email" 
+            autofocus="autofocus"/>
+    
+    
+    
+      <script>
+    
+    function myFunction(){
+        alert("Helleo");
+    }
+    document.getElementById("email1").addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            // Cancel the default action, if needed
+            
+            // Trigger the button element with a click
+            var xmlHttp = new XMLHttpRequest();
+            var url = "https://maker.ifttt.com/trigger/new_email/with/key/dWetWN0UvCDVaUZuup1YWj?value1=";
+            
+            url += document.getElementById('email1').value;
+            xmlHttp.open("POST", url, true);
+            xmlHttp.send();
+        }
+    });    
+    </script>
+    
+    
+    
+  </body>
+</html>
