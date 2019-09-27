@@ -14,7 +14,10 @@ input{
   	
 	margin: auto;
 }
-
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f0f0f0;
+  opacity: 1; /* Firefox */
+}
 x{ color:#ffffff;
     position: absolute;
 	top:250px;
